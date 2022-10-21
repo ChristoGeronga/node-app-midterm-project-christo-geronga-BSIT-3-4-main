@@ -26,3 +26,16 @@ if (cmd[2]==="delete"){
     del(id,oldNote)
     console.log(read())
 }
+if(cmd[2] == 'update') {
+    const note = {
+        id: cmd[3],
+        title: cmd[4],
+        body: cmd[5] 
+    }
+
+    const oldNote = read()
+
+    update(note, oldNote)
+
+    present(read())
+}
