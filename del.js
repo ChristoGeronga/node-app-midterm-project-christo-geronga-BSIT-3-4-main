@@ -1,4 +1,4 @@
-const fs = reqiure ('fs')
+const fs = require ('fs')
 
 const del = function(id,oldNote){
     const note = JSON.parse(oldNote)
